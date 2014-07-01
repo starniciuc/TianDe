@@ -1,9 +1,19 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+ul.menu{
+	padding: 0;
+	
+	font-size: 16px;
+	font-weight: bold;
+}
+ul.menu li{
+	display: inline-block;	
+	padding: 5px;
+}
+ul.menu li a{
+	color:#FFF;
+}
 
 
 

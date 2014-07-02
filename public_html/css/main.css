@@ -2,6 +2,10 @@
    Author's custom styles
    ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
+
+@import url("calendar.css");
+@import url("scroll.css");
+
 body{
     font-family: 'PT Sans', sans-serif;
 }
@@ -371,3 +375,10 @@ footer a.alente{
 .margin10{
     margin-top: 10px;
 }
+.block-news{
+	height: 150px;
+
+	overflow-y: scroll;
+	margin-top: 100px;
+}
+

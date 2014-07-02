@@ -1,8 +1,8 @@
-$(document).ready(function() {
-	$('.block-news').jScrollPane({
-		autoReinitialise: true,
-	});
-});
+//$(document).ready(function() {
+//	$('.block-news').jScrollPane({
+//		autoReinitialise: true,
+//	});
+//});
 
 function Calendar2(id, year, month) {
 	var Dlast = new Date(year, month + 1, 0).getDate(),
@@ -47,3 +47,9 @@ document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').oncli
 document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
 	Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) + 1);
 }
+$(document).ready(function(){
+	$("#calendar2 tbody td").click(function(){
+		console.log("brrr");
+		$(this).addClass("today");
+	});
+});

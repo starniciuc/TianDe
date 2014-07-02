@@ -202,7 +202,7 @@ ul.menu li a{
     display: block;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
     text-decoration: none;
-    padding: 10px 36px;
+    padding: 10px 35px;
 }
 ul.menu li a span{
     display: block;
@@ -348,7 +348,7 @@ footer .logo{
 .menu-footer li a{
     color:#FFFFFF;
     text-transform: uppercase;
-    padding: 0 20px;
+    padding: 0 19px;
     font-size: 14px;
     text-decoration: none;
 }

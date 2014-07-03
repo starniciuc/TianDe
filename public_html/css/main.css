@@ -407,6 +407,12 @@ body.purple .title-block h2{
     background-repeat: no-repeat;
     background-position: 10px center;
 }
+.title-block .name.hand{
+    padding-left: 45px;
+    background-image: url("../img/hand.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
 .title-block .arr{
     display: block;
     height: 52px;
@@ -464,10 +470,74 @@ a.registation:hover{
 .content .row{
     margin-bottom: 10px;
 }
+.blog-block{
+	border-radius: 0 5px 5px 5px;
+	border:1px solid #d3d3d3;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 20px;
+}
+.item-block{
+	padding: 0 15px;
+}
+.item-block .image{
+	width: 115px;
+	height: 115px;
+	margin: 0 15px 15px 0;
+	float: left;
+}
+.item-block .image img{
+	border-radius: 5px;
+	border:1px solid #ebe3d7;
+	width: 100%;
+	height: 100%;
+}
+.item-block .blog-footer p{
+	color:#52359b;
+    font-size: 16px;
+}
+a.share{
+	text-decoration: none !important;
+	padding: 2px 15px;
+	border-radius: 5px;
+	border:1px solid #d3d3d3;
+	background: #f8f8f8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f8f8f8 0%, #dddddd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f8f8f8 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f8f8f8 0%,#dddddd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f8f8f8 0%,#dddddd 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f8f8f8 0%,#dddddd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+	font-size: 13px !important;
+	margin-left: 10px;
+}
+.more a{
+	background-color: #e5e7e9;
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	background-image: url("../img/more-icon.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.right-block{
+	position: relative;
+	overflow: hidden;
+}
+.right-block h3{
+	color: #f37324;
+	text-align: center;
+	padding-bottom: 6px;
+	border-bottom: 1px solid #f37324;
+	font-size: 20px;
+}
 /*Content*/
 .block-news{
-    height: 150px;
+    height: 220px;
     overflow-y: scroll;
-    margin-top: 100px;
 }
 

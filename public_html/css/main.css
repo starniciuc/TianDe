@@ -523,18 +523,16 @@ a.registation:hover{
     width: 100%;
     height: 100%;
 }
-.item-block .blog-footer ul{
+ .blog-footer ul{
     padding: 0;
     list-style: none;
 }
-.item-block .blog-footer ul li{
+.blog-footer ul li{
     display: inline-block;
 }
-.item-block .blog-footer ul li{
+.blog-footer ul li{
     color:#52359b;
     font-size: 16px;
-}
-.item-block .blog-footer a{
 }
 .share{
     text-decoration: none !important;
@@ -889,9 +887,14 @@ h3.star-icon span{
 .blog-page{
 	border-radius: 5px;
 	padding-bottom: 25px;
+	margin-bottom: 20px;
 }
 .blog-page .item-block a{
 	text-decoration: none;
+}
+.blog-page .item-block a:hover > h3{
+	color: #345ba3;
+	border-bottom: 1px solid #345ba3;
 }
 .blog-page .more a{
 	height: 25px;
@@ -904,8 +907,16 @@ h3.star-icon span{
 	background-color: #c0dbfe;
 }
 .blog-page .more a span{
-	padding: 3px 10px 3px;
+	padding: 0px 22px 6px;
 	background-image: url("../img/more-blog.png");
 	background-position: center center;
 	background-repeat: no-repeat;
+}
+.text-container p{
+	font-size: 16px;
+	color: #4b4b4b;
+}
+.text-container h4{
+	font-size: 24px;
+	color: #345ba3;
 }

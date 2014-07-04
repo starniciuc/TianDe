@@ -425,6 +425,12 @@ body.purple .title-block h2{
     background-repeat: no-repeat;
     background-position: 10px center;
 }
+.title-block .name.query{
+    padding-left: 45px;
+    background-image: url("../img/query-icon.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
 .title-block .arr{
     display: block;
     height: 52px;
@@ -773,8 +779,133 @@ h3{
 .pad{
     padding: 32px 0;
 }
-/*Content*/
+.query-form input, 
+.query-form textarea
+{
+	font-size: 16px;
+}
 .block-news{
     height: 220px;
     overflow-y: scroll;
+}
+.capchea{
+	background-color: #e5e7e9;
+	width: 100%;
+	border-radius: 4px;
+	color:#0c60b2;
+	text-align: center;
+	font-size: 18px;
+	line-height: 34px;
+	background-image: url("../img/capchea.png");
+	background-position: center center;
+	background-size: auto  auto;
+	background-repeat: no-repeat;
+}
+.btn-submit{
+	font-size: 18px;
+	color: #fefefe;
+	border: 0;
+	border-radius: 4px;
+	padding: 7px 10px 7px 3px;
+	background: #e4813d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e4813d 0%, #c56829 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4813d), color-stop(100%,#c56829)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e4813d 0%,#c56829 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e4813d 0%,#c56829 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e4813d 0%,#c56829 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e4813d 0%,#c56829 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4813d', endColorstr='#c56829',GradientType=0 ); /* IE6-9 */
+}
+.btn-submit.query span{
+	padding: 20px;
+	background-image: url("../img/query-btn.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.btn-submit:hover{
+	background: #c56829; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c56829 0%, #e4813d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c56829), color-stop(100%,#e4813d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c56829 0%,#e4813d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c56829 0%,#e4813d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c56829 0%,#e4813d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c56829 0%,#e4813d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c56829', endColorstr='#e4813d',GradientType=0 ); /* IE6-9 */
+}
+h3.star-icon span{
+	background-image: url("../img/star-icon.png");
+	padding: 2px 17px;
+}
+.block-about .telephone{
+	background-image: url("../img/tel.png");
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	padding-left: 20px;
+	text-decoration: none;
+}
+.block-about .mail{
+	background-image: url("../img/mail-icon.png");
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	padding-left: 20px;
+}
+.block-about .skype{
+	background-image: url("../img/skype-icon.png");
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	padding-left: 20px;
+}
+.block-about p{
+	margin-bottom: 3px;
+}
+.block-about img{
+	width: 100%;
+	height: 100%;
+	background-color: #b7bbbe;
+}
+.block-about .image-prev{
+	position: relative;
+	width: 150px;
+	margin: 0 auto;
+	height: 150px;
+	margin-bottom: 10px;
+}
+.block-about .bull{
+    position: absolute;
+    top:65%;
+    left: 100%;
+    margin-left: -10px;
+    margin-top: -8px;
+    border: 2px solid #FFFFFF;
+    border-radius: 16px;
+    width: 16px;
+    height: 16px;
+    background-color: #886adf;
+}
+.slider-side.o .man .image a{
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.blog-page{
+	border-radius: 5px;
+	padding-bottom: 25px;
+}
+.blog-page .item-block a{
+	text-decoration: none;
+}
+.blog-page .more a{
+	height: 25px;
+	background:none;
+	background-color: #e5e7e9;
+	color:#f37324;
+}
+.blog-page .more a:hover{
+	text-decoration: underline;
+	background-color: #c0dbfe;
+}
+.blog-page .more a span{
+	padding: 3px 10px 3px;
+	background-image: url("../img/more-blog.png");
+	background-position: center center;
+	background-repeat: no-repeat;
 }

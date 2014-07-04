@@ -1,0 +1,161 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04.07.2014, 0:34:04
+    Author     : phoenix
+*/
+.jssora03l, .jssora03r, .jssora03ldn, .jssora03rdn
+{
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    overflow:hidden;
+    top:50%;
+}
+.jssora03l {
+    background-image: url("../img/left-arrow.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0px;
+}
+.jssora03r { 
+    background-image: url("../img/right-arrow.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+.jssora03l:hover { 
+    background-image: url("../img/left-arrow-h.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0px;
+}
+.jssora03r:hover {
+    background-image: url("../img/right-arrow-h.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+.jssora03ldn { 
+    background-image: url("../img/left-arrow.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0px;
+}
+.jssora03rdn { 
+    background-image: url("../img/right-arrow.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+#slider1_container2 .jssora03l, #slider1_container2 .jssora03r, #slider1_container2 .jssora03ldn, #slider1_container2 .jssora03rdn
+{
+    margin-top: -25px;
+}
+#slider1_container2 .jssora03l {
+    background-image: url("../img/arrow-left.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0px;
+}
+#slider1_container2 .jssora03r { 
+    background-image: url("../img/arrow-right.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+#slider1_container2 .jssora03l:hover { 
+    background-image: url("../img/arrow-left-h.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0px;
+}
+#slider1_container2 .jssora03r:hover {
+    background-image: url("../img/arrow-right-h.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+#slider1_container2 .jssora03ldn { 
+    background-image: url("../img/arrow-left.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0px;
+}
+#slider1_container2 .jssora03rdn { 
+    background-image: url("../img/arrow-right.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+.man{
+    margin-bottom: 10px;
+
+}
+.man .image{
+    width: 125px;
+    height: 125px;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+}
+.man .image .bull{
+    position: absolute;
+    top:50%;
+    left: 100%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid #FFFFFF;
+    border-radius: 16px;
+    width: 16px;
+    height: 16px;
+    background-color: #886adf;
+}
+.man .desc-user{
+    padding-top: 30px;
+}
+.man .grey{
+    color: #b0b0b0;
+    margin-bottom: 0px;
+}
+.man .city{
+    color: #4b4b4b;
+    margin-bottom: 5px;
+}
+.man .image img{
+    width: 100%;
+    height: 100%;
+    border:1px solid #e1e1e1;
+}
+.man .desc-user a{
+    font-size: 14px !important;
+    text-transform: uppercase;
+}
+.man:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.image-slide img{
+    border:1px solid #d0d0d0;
+    border-radius: 4px;
+}
+.image-slide{
+    position: relative;
+}
+.image-slide .play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -46px;
+    margin-top: -46px;
+    width: 93px;
+    height: 93px;
+    background-image: url("../img/play.png");
+}
+.image-slide .play:hover{
+     background-image: url("../img/play-h.png");
+}

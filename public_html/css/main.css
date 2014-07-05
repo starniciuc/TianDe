@@ -920,3 +920,38 @@ h3.star-icon span{
 	font-size: 24px;
 	color: #345ba3;
 }
+.lider-img-contact img{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #c6c9cf;
+}
+.block-contact-data h3{
+    margin-top: 0;
+    font-size: 24px;
+}
+.map-side{
+    height: 400px;
+    border-radius: 5px 0 0 5px;
+    border:1px solid rgba(52, 91, 163, 0.24);
+    width: 70%;
+    float: left;
+    border-right: 0; 
+}
+.adress-list{
+    float: left;
+    height: 400px;
+    border-radius:0 5px 5px 0;
+    width: 30%;
+    border:1px solid rgba(52, 91, 163, 0.24);
+    border-left: 0;
+    background-color: #FFFFFF;
+    z-index: 3;
+}
+.adress-list .right-block{
+    border-radius:0 5px 5px 0;
+    padding:0 15px;
+    padding-bottom: 14px; 
+    }
+.adress-list .block-news{
+    height: 325px;
+}

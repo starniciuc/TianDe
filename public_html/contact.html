@@ -13,9 +13,22 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" /><!--add new-->
         <link rel="stylesheet" href="css/main.css">
-
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+        <script>
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(54.889, 92.00);
+                var myOptions = {
+                    zoom: 6,
+                    center: myLatlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     </head>
     <body class="purple">
         <!--[if lt IE 7]>
@@ -93,26 +106,81 @@
             <!--Content-->
             <div class="container content">
                 <div class="row">
-                    <div class="col-sm-9">
-                        #content
-                    </div>
-                    <div class="col-sm-3">
-                        #side-bar
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid about-block">
-                <div class="bg-about row">
-                    <div class="container">
+                    <div class="col-sm-12">
+                        <div class="adress-block">
+                            <ul>
+                                <li><a href="index.html">Главная</a></li>
+                                <li>Контакты</li>
+                            </ul>
+                        </div>
+                        <div class="title-block clearfix">
+                            <div class="name hand">Контакты</div><div class="arr"></div>
+                        </div> 
                         <div class="row">
-                            <div class="col-sm-12">
-                                <h1>О TianDe</h1>
-                                <p>Осень – идеальное время для того, чтобы заняться своим здоровьем, укрепить организм – одним словом, привести себя в полный порядок. Новый каталог TianDe сделает ваше осеннее обновление еще более легким и приятным, позволив всегда оставаться «В ритме жизни».</p>
-                                <p>Осенний каталог TianDe – это отражение счастливой жизни. Почувствуйте ее ритм, вдохните полной грудью ее осенний аромат… Аромат совершенства и щедрости природы. Будьте в ритме жизни вместе с TianDe! Получайте все лучшее от природы с заботой о ней. Осень – идеальное время для того, чтобы заняться своим здоровьем, укрепить организм – одним словом, привести себя в полный порядок. Новый каталог TianDe сделает ваше осеннее обновление еще более легким и приятным, позволив всегда оставаться «В ритме жизни».</p>
-                                <p>Осенний каталог TianDe – это отражение счастливой жизни. Почувствуйте ее ритм, вдохните полной грудью ее осенний аромат… Аромат совершенства и щедрости природы. Будьте в ритме жизни вместе с TianDe! Получайте все лучшее от природы с заботой о ней.</p>
+                            <div class="col-sm-2 lider-img-contact">
+                                <img src="img/lider.png">
+                            </div>
+                            <div class="col-sm-10 block-contact-data">
+                                <h3 class="text-left">Гримберг Евгения</h3>
+                                <div class="block-about">
+                                    <p><a href="tel:+79631914039" class="telephone">+7(963) 191-40-39</a></p>
+                                    <p><a href="email:grimberg@rustiande.ru" class="mail">grimberg@rustiande.ru</a></p>
+                                    <p><a href="#" class="skype">Evgenia_Grimberg</a></p>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="map-side" id="map_canvas">
+                        </div>
+                        <div class="adress-list">
+                            <div class="right-block">
+                                <h3>Сервисные центры</h3>
+                                <div class="block-news">
+                                    <a href="#">Красноярский Дилерский центр:</a>
+                                    <p>ул. Урицкого, д. 52<br>
+                                        +7 (391) 265-84-32, 265-84-43<br>
+                                        tiande_krasnoyarsk@mail.ru</p>
+                                    <a href="#">Нижний Новгород:</a>
+                                    <p>ул. Малая Покровская, 4 <br>
+                                        (831) 433-41-22</p>
+                                    <a href="#">СЦ TianDe-Румыния:</a>
+                                    <p>Adresa: SOS MIHAI BRAVU 132, SECTOR 2, BUCURESTI<br>
+                                        Address: 132 MIHAI BRAVU ROAD, DISTRICT 2, BUCHAREST</p>
+                                    <a href="#">Нижний Новгород:</a>
+                                    <p>ул. Малая Покровская, 4 <br>
+                                        (831) 433-41-22</p>
+                                    <a href="#">Красноярский Дилерский центр:</a>
+                                    <p>ул. Урицкого, д. 52<br>
+                                        +7 (391) 265-84-32, 265-84-43<br>
+                                        tiande_krasnoyarsk@mail.ru</p>
+                                    <a href="#">Нижний Новгород:</a>
+                                    <p>ул. Малая Покровская, 4 <br>
+                                        (831) 433-41-22</p>
+                                    <a href="#">СЦ TianDe-Румыния:</a>
+                                    <p>Adresa: SOS MIHAI BRAVU 132, SECTOR 2, BUCURESTI<br>
+                                        Address: 132 MIHAI BRAVU ROAD, DISTRICT 2, BUCHAREST</p>
+                                    <a href="#">Нижний Новгород:</a>
+                                    <p>ул. Малая Покровская, 4 <br>
+                                        (831) 433-41-22</p>
+                                    <a href="#">Красноярский Дилерский центр:</a>
+                                    <p>ул. Урицкого, д. 52<br>
+                                        +7 (391) 265-84-32, 265-84-43<br>
+                                        tiande_krasnoyarsk@mail.ru</p>
+                                    <a href="#">Нижний Новгород:</a>
+                                    <p>ул. Малая Покровская, 4 <br>
+                                        (831) 433-41-22</p>
+                                    <a href="#">СЦ TianDe-Румыния:</a>
+                                    <p>Adresa: SOS MIHAI BRAVU 132, SECTOR 2, BUCURESTI<br>
+                                        Address: 132 MIHAI BRAVU ROAD, DISTRICT 2, BUCHAREST</p>
+                                    <a href="#">Нижний Новгород:</a>
+                                    <p>ул. Малая Покровская, 4 <br>
+                                        (831) 433-41-22</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -154,6 +222,15 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.block-news').jScrollPane({
+                    autoReinitialise: true,
+                });
+            });
+        </script>
     </body>
 </html>

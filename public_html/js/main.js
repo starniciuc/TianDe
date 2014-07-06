@@ -32,18 +32,20 @@ function Calendar2(id, year, month) {
 		document.querySelector('#' + id + ' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
 	}
 }
-//Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
-// переключатель минус месяц
-//document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
-//	Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) - 1);
-//}
-//// переключатель плюс месяц
-//document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
-//	Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) + 1);
-//}
+
 $(document).ready(function(){
 	$("#calendar2 tbody td").click(function(){
 		console.log("brrr");
 		$(this).addClass("today");
 	});
 });
+$(".btn-open").click(function() {
+        var mybtn = $(this);
+        var par = mybtn.parents(".blog-page").children(".collapse");
+        par.collapse("show");
+//        par.on('shown.bs.collapse', function() {
+//            mybtn.click(function() {
+//                par.collapse('hide');
+//            });
+//        });
+    });

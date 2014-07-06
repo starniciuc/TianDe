@@ -431,6 +431,18 @@ body.purple .title-block h2{
     background-repeat: no-repeat;
     background-position: 10px center;
 }
+.title-block .name.about{
+    padding-left: 45px;
+    background-image: url("../img/about-purple.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.title-block .name.mic{
+    padding-left: 45px;
+    background-image: url("../img/mic-icon.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
 .title-block .arr{
     display: block;
     height: 52px;
@@ -954,4 +966,44 @@ h3.star-icon span{
     }
 .adress-list .block-news{
     height: 325px;
+}
+.text-container img{
+    width: 325px;
+    border-radius: 6px;
+    border:1px solid #d2d2d3;
+    float:left;
+    margin-right: 15px;
+}
+.text-container.about img{
+    width: 260px;
+}
+.text-container hr{
+    border: 0;
+    background-color: #345ba3;
+    height: 1px;
+}
+.image-play{
+    position: relative;
+    float: left;
+}
+.text-container .block-contact-data{
+    margin-left: 275px;
+    margin-bottom: 30px;
+}
+.text-container .block-contact-data p{
+    margin-bottom: 10px;
+}
+.blog-page.activity h3{
+    margin:10px 15px;
+}
+.blog-page.activity a{
+    text-decoration: underline;
+}
+.blog-page.activity a:hover{
+    color:#f37324;
+    text-decoration: none;
+}
+.blog-page.activity p{
+    font-size: 16px;
+    color:#4b4b4b;
 }

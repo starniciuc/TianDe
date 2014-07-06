@@ -33,12 +33,6 @@ function Calendar2(id, year, month) {
 	}
 }
 
-$(document).ready(function(){
-	$("#calendar2 tbody td").click(function(){
-		console.log("brrr");
-		$(this).addClass("today");
-	});
-});
 $(".btn-open").click(function() {
         var mybtn = $(this);
         var par = mybtn.parents(".blog-page").children(".collapse");

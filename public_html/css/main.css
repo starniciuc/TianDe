@@ -1380,6 +1380,7 @@ h3.star-icon span{
     width: 16px;
     height: 16px;
     background-color: #886adf;
+    z-index: 3;
 }
 body.blue .block-about .bull{
     background-color: #0058fc;

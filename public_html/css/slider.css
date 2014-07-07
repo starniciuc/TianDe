@@ -221,6 +221,7 @@ body.red #slider1_container2 .jssora03rdn {
     width: 16px;
     height: 16px;
     background-color: #886adf;
+    z-index: 3;
 }
 body.blue .man .image .bull{
     background-color: #0058fc;
@@ -272,6 +273,7 @@ body.red .man .image .bull{
     width: 93px;
     height: 93px;
     background-image: url("../img/play.png");
+    z-index: 3;
 }
 body.blue .play{
     background-image: url("../img/play-blue.png");

@@ -1069,3 +1069,52 @@ h3.star-icon span{
     background-position: center center;
     padding: 8px;
 }
+.modal-header.title h3{
+    border: 0;
+    text-decoration: underline;
+    margin: 0;
+}
+.modal-header{
+    border: 0;
+    padding-top: 15px;
+    
+}
+.modal-body{
+    padding: 0 40px;
+}
+.modal-footer{
+    border:0;
+}
+.modal-md{
+    max-width: 400px;
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    margin-top: 10%;
+}
+.modal-md .registation div{
+    left: 5px;
+    top: 5px;
+    background-image: url("../img/phone-w.png");
+    width: 22px;
+    height: 24px;
+}
+.modal-md .registation span{
+    padding-left: 35px;
+}
+.modal-md .close{
+    width: 24px;
+    height: 24px;
+    border: 0;
+    padding: 0;
+    background: none;
+    background-image: url("../img/close.png");
+    opacity: 1;
+}
+.modal-md .info-p{
+    font-size: 20px;    
+    padding: 0 60px;
+    padding-top: 40px;
+    line-height: 30px;
+    text-align: center;
+    color:#f37324;
+}

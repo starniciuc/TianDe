@@ -32,7 +32,7 @@
                         <div class="row">
                             <div class="col-sm-3 contact">
                                 <p><a href="tel:+79631914039">+7(963) <span>191-40-39</span></a></p>
-                                <a href="#" class="callback">Заказать звонок</a>
+                                <a data-toggle="modal" data-target="#registration" href="javascript:void(0)" class="callback">Заказать звонок</a>
                             </div>
                             <div class="col-sm-3 contact2">
                                 <p><a href="email:grimberg@rustiande.ru" class="mail">grimberg@rustiande.ru</a></p>
@@ -398,6 +398,62 @@
                 </div>
             </footer>
 
+        </div>
+        <div class="modal fade bs-example-modal-md" id="registration" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-vertical-centered  modal-def">
+
+                <div class="modal-content modal-pers">
+                    <div class="right-block">
+                        <div class="modal-header title">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                            <h3>Заказать звонок</h3>
+                        </div>
+                        <form>
+                            <div class="modal-body modal-body-re">
+                                <div class="form-group"><input type="text" class="form-control" placeholder="Имя"></div>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="Телефон"></div>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="Город"></div>
+                                <div class="form-group"><input type="text" class="form-control" placeholder="Удобное время"></div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" placeholder="Введите код*">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="capchea">RT35ut</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer footer">
+                                <div class="text-center">
+                                    <a href="#" class="registation"><span>Заказать звонок</span><div></div></a>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div><!-- /.modal-content -->
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bs-example-modal-md" id="gotoform" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-vertical-centered  modal-def">
+                <div class="modal-content modal-pers">
+                    <div class="right-block">
+                        <div class="modal-header title">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                        </div>
+                            <p class="info-p">Сейчас вы перейдете на страницу с формой для присоединения к команде</p>
+                            <div class="modal-footer footer">
+                                <div class="text-center">
+                                    <button type="submit" class="btn-subscribe">Перейти</button>
+                                </div>
+
+                            </div>
+                        
+                    </div><!-- /.modal-content -->
+                </div>
+            </div>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>

@@ -21,19 +21,37 @@ and open the template in the editor.
     background-repeat: no-repeat;
     left: 0px;
 }
+body.blue .jssora03l {
+    background-image: url("../img/left-arrow-blue.png");
+}
+body.green .jssora03l {
+    background-image: url("../img/left-arrow-green.png");
+}
+body.red .jssora03l {
+    background-image: url("../img/left-arrow-red.png");
+}
 .jssora03r { 
     background-image: url("../img/right-arrow.png");
     background-position: center center;
     background-repeat: no-repeat;
     right: 0px;
 }
-.jssora03l:hover { 
+body.blue .jssora03r { 
+    background-image: url("../img/right-arrow-blue.png");
+}
+body.green .jssora03r { 
+    background-image: url("../img/right-arrow-green.png");
+}
+body.red .jssora03r { 
+    background-image: url("../img/right-arrow-red.png");
+}
+body .jssora03l:hover { 
     background-image: url("../img/left-arrow-h.png");
     background-position: center center;
     background-repeat: no-repeat;
     left: 0px;
 }
-.jssora03r:hover {
+body .jssora03r:hover {
     background-image: url("../img/right-arrow-h.png");
     background-position: center center;
     background-repeat: no-repeat;
@@ -45,11 +63,29 @@ and open the template in the editor.
     background-repeat: no-repeat;
     left: 0px;
 }
+body.blue .jssora03ldn { 
+    background-image: url("../img/left-arrow-blue.png");
+}
+body.green .jssora03ldn { 
+    background-image: url("../img/left-arrow-green.png");
+}
+body.red .jssora03ldn { 
+    background-image: url("../img/left-arrow-red.png");
+}
 .jssora03rdn { 
     background-image: url("../img/right-arrow.png");
     background-position: center center;
     background-repeat: no-repeat;
     right: 0px;
+}
+body.blue .jssora03rdn { 
+    background-image: url("../img/right-arrow-blue.png");
+}
+body.green .jssora03rdn { 
+    background-image: url("../img/green.png");
+}
+body.red .jssora03rdn { 
+    background-image: url("../img/red.png");
 }
 #slider1_container2 .jssora03l, #slider1_container2 .jssora03r, #slider1_container2 .jssora03ldn, #slider1_container2 .jssora03rdn
 {
@@ -61,19 +97,37 @@ and open the template in the editor.
     background-repeat: no-repeat;
     left: 0px;
 }
+body.blue #slider1_container2 .jssora03l {
+    background-image: url("../img/arrow-left-blue.png");
+}
+body.green #slider1_container2 .jssora03l {
+    background-image: url("../img/arrow-left-green.png");
+}
+body.red #slider1_container2 .jssora03l {
+    background-image: url("../img/arrow-left-red.png");
+}
 #slider1_container2 .jssora03r { 
     background-image: url("../img/arrow-right.png");
     background-position: center center;
     background-repeat: no-repeat;
     right: 0px;
 }
-#slider1_container2 .jssora03l:hover { 
+body.blue #slider1_container2 .jssora03r { 
+    background-image: url("../img/arrow-right-blue.png");
+}
+body.green #slider1_container2 .jssora03r { 
+    background-image: url("../img/arrow-right-green.png");
+}
+body.red #slider1_container2 .jssora03r { 
+    background-image: url("../img/arrow-right-red.png");
+}
+body #slider1_container2 .jssora03l:hover { 
     background-image: url("../img/arrow-left-h.png");
     background-position: center center;
     background-repeat: no-repeat;
     left: 0px;
 }
-#slider1_container2 .jssora03r:hover {
+body #slider1_container2 .jssora03r:hover {
     background-image: url("../img/arrow-right-h.png");
     background-position: center center;
     background-repeat: no-repeat;
@@ -85,11 +139,29 @@ and open the template in the editor.
     background-repeat: no-repeat;
     left: 0px;
 }
+body.blue #slider1_container2 .jssora03ldn { 
+    background-image: url("../img/arrow-left-blue.png");
+}
+body.green #slider1_container2 .jssora03ldn { 
+    background-image: url("../img/arrow-left-green.png");
+}
+body.red #slider1_container2 .jssora03ldn { 
+    background-image: url("../img/arrow-left-red.png");
+}
 #slider1_container2 .jssora03rdn { 
     background-image: url("../img/arrow-right.png");
     background-position: center center;
     background-repeat: no-repeat;
     right: 0px;
+}
+body.blue #slider1_container2 .jssora03rdn { 
+    background-image: url("../img/arrow-right-blue.png");
+}
+body.green #slider1_container2 .jssora03rdn { 
+    background-image: url("../img/arrow-right-green.png");
+}
+body.red #slider1_container2 .jssora03rdn { 
+    background-image: url("../img/arrow-right-red.png");
 }
 #slider1_container_view .jssora03l {
     background-image: url("../img/arrow-left-h.png");
@@ -150,6 +222,15 @@ and open the template in the editor.
     height: 16px;
     background-color: #886adf;
 }
+body.blue .man .image .bull{
+    background-color: #0058fc;
+}
+body.green .man .image .bull{
+    background-color: #328b25;
+}
+body.red .man .image .bull{
+    background-color: #c4384c;
+}
 .man .desc-user{
     padding-top: 30px;
 }
@@ -192,7 +273,16 @@ and open the template in the editor.
     height: 93px;
     background-image: url("../img/play.png");
 }
-.play:hover{
+body.blue .play{
+    background-image: url("../img/play-blue.png");
+}
+body.green .play{
+    background-image: url("../img/play-green.png");
+}
+body.red .play{
+    background-image: url("../img/play-red.png");
+}
+body .play:hover{
     background-image: url("../img/play-h.png");
 }
 #slider1_container_view .view-img{

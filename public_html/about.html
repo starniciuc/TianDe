@@ -93,7 +93,7 @@
             <!--Content-->
             <div class="container content">
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-md-8">
                         <div class="adress-block">
                             <ul>
                                 <li><a href="index.html">Главная</a></li>
@@ -121,7 +121,7 @@
                            
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 hidden-sm hidden-xs">
                         <div class="bg-white">
                             <div class="col-sm-12 right-block first-block">
                                 <h3 class="star-icon"><span></span> Гримберг Евгения</h3>
@@ -248,7 +248,22 @@
                 },
             };
             var jssor_slider_prod3 = new $JssorSlider$("slider1_container3", options_prod1);
+             function ScaleSlider() {
 
+                var parentWidth1 = jssor_slider_prod3.$Elmt.parentNode.clientWidth;
+                if (parentWidth1) {
+
+                    jssor_slider_prod3.$SetScaleWidth(Math.min(parentWidth1, 360));
+                }
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            }
         </script>
     </body>
 </html>

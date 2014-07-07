@@ -26,6 +26,15 @@ and open the template in the editor.
 	height: 15px;
 	border-radius: 2px;
 }
+body.blue .jspDrag{
+    background: #8aa6d6;
+}
+body.green .jspDrag{
+    background: #6eb865;
+}
+body.red .jspDrag{
+    background: #c4384c;
+}
 .jspVerticalBar{
 	width: 6px;
 }

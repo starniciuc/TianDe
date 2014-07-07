@@ -17,7 +17,7 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body class="purple">
+    <body class="green">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -93,7 +93,7 @@
             <!--Content-->
             <div class="container content">
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-md-8">
                         <div class="adress-block">
                             <ul>
                                 <li><a href="index.html">Главная</a></li>
@@ -124,14 +124,14 @@
                             </div>
                             <p>Сегодня, на рубеже 7-летия Корпорации, мы точно знаем, насколько важны все перечисленные компоненты стратегии TianDe. Однако определяющий фактор успеха – Человек, Лидер. Именно он говорит «Добро пожаловать» новым партнерам. Лидер – это человек, транслирующий ценности, которые разделяют сотни и тысячи людей! Это ценность здоровья, ценность счастья, отношений между родителями и детьми, возлюбленными и друзьями и многие-многие другие. Его слова отзываются эхом во многих сердцах, они наполняют их энергией и верой в себя!!! Лидер – это магнит, к которому тянутся умы, сердца и души!</p>
                             <p>Фраза о роли личности в истории по-прежнему актуальна и будет современной всегда. Точно так же как всегда на рынке будет вестись конкурентная борьба. И победу в ней будут одерживать только те, у кого за плечами есть крепкая команда, команда энергичных и целеустремленных личностей! Вчера, сегодня, завтра наш успех неразрывно связан с успехом наших партнеров. СИЛЬНЫЙ ЛИДЕР - СИЛЬНАЯ КОМАНДА - ЕДИНЫЕ ЦЕННОСТИ – БОЛЬШАЯ ЦЕЛЬ – ГРАНДИОЗНЫЙ РЕЗУЛЬТАТ. Эта цепочка, ведущая к вершинам успеха!</p>
-                            
+
                             <h3></h3>
                             <div class="text-center">
                                 <button type="submit" class="btn-submit query"><span></span>Задайте мне вопрос</button> 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 hidden-sm hidden-xs">
                         <div class="bg-white">
                             <div class="col-sm-12 right-block first-block">
                                 <h3 class="star-icon"><span></span> Гримберг Евгения</h3>
@@ -258,7 +258,22 @@
                 },
             };
             var jssor_slider_prod3 = new $JssorSlider$("slider1_container3", options_prod1);
+            function ScaleSlider() {
 
+                var parentWidth1 = jssor_slider_prod3.$Elmt.parentNode.clientWidth;
+                if (parentWidth1) {
+
+                    jssor_slider_prod3.$SetScaleWidth(Math.min(parentWidth1, 360));
+                }
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            }
         </script>
     </body>
 </html>

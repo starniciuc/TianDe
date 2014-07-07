@@ -1007,3 +1007,65 @@ h3.star-icon span{
     font-size: 16px;
     color:#4b4b4b;
 }
+.block-team{
+    max-height: 445px;
+    overflow: visible;
+}
+.team{
+    border-radius: 10px;
+    z-index: 1;
+    min-height: 430px;
+}
+.blog-block .about-empl{
+    padding: 5px 15px;
+    border-bottom: 1px solid #f37324;
+}
+.blog-block .about-empl h5{
+    color:#345ba3;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Verdana,Geneva,Kalimati,sans-serif;
+}
+.blog-block .about-empl img{
+    width: 100%;
+}
+.blog-block .about-empl a{
+    font-size: 14px;
+    font-family: Verdana,Geneva,Kalimati,sans-serif;
+}
+.blog-block .about-empl table{
+    width: 100%;
+    font-family: Verdana,Geneva,Kalimati,sans-serif;
+}
+.blog-block .about-empl table tr td{
+    border-bottom: 1px dotted #b0b0b0 !important;
+    padding: 5px 0;
+}
+.blog-block .about-empl table tr:first-child td{
+    color: #345ba3;
+}
+.blog-block .about-empl table tr td.adress{
+    color: #b0b0b0;
+}
+.blog-block .about-empl table tr:last-child td{
+    border-bottom: 0 !important;
+}
+.button-area{
+    padding: 15px;
+}
+.button-area .btn-submit{
+    margin-bottom: 15px;
+    padding: 7px 0px 7px 3px;
+    font-size: 14px;
+    
+}
+.button-area .btn-submit span{
+    background-image: url("../img/btn-team.png");
+    padding: 7px 10px 7px 3px;
+}
+.button-area .btn-submit span i{
+    background-image: url("../img/strel.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 8px;
+}

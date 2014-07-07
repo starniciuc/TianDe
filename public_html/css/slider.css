@@ -91,6 +91,42 @@ and open the template in the editor.
     background-repeat: no-repeat;
     right: 0px;
 }
+#slider1_container_view .jssora03l {
+    background-image: url("../img/arrow-left-h.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0px;
+}
+#slider1_container_view .jssora03r { 
+    background-image: url("../img/arrow-right-h.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+#slider1_container_view .jssora03l:hover { 
+    background-image: url("../img/arrow-left-h.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0px;
+}
+#slider1_container_view .jssora03r:hover {
+    background-image: url("../img/arrow-right-h.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 0px;
+}
+#slider1_container_view .jssora03ldn { 
+    background-image: url("../img/arrow-left-h.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0px;
+}
+#slider1_container_view .jssora03rdn { 
+    background-image: url("../img/arrow-right-h.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 0px;
+}
 .man{
     margin-bottom: 10px;
 
@@ -157,5 +193,60 @@ and open the template in the editor.
     background-image: url("../img/play.png");
 }
 .play:hover{
-     background-image: url("../img/play-h.png");
+    background-image: url("../img/play-h.png");
+}
+#slider1_container_view .view-img{
+
+    border:1px solid #c9c9c9;
+    border-radius: 0;
+    margin: 0;
+    float: none;
+}
+.jssort07 .i {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 90px;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.jssort07 .p:hover .i, .jssort07 .pav .i {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.jssort07 .o {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 90px;
+    border: 1px solid #ccc;
+    transition: border-color .6s;
+    -moz-transition: border-color .6s;
+    -webkit-transition: border-color .6s;
+    -o-transition: border-color .6s;
+}
+* html .jssort07 .o {
+    /* ie quirks mode adjust */
+    width /**/: 150px;
+    height /**/: 90px;
+}
+
+.jssort07 .pav .o, .jssort07 .p:hover .o {
+    border-color: #f47a2f;
+}
+
+.jssort07 .pav:hover .o {
+    border-color: #f47a2f;
+}
+
+.jssort07 .p:hover .o {
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
 }

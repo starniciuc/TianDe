@@ -1074,6 +1074,13 @@ h3{
     background-repeat: no-repeat;
     background-position: 4px center;
 }
+ 
+body.green .adress-block ul li{
+    color:#328b25;
+}
+body.red .adress-block ul li{
+    color:#8d1c2c;
+}
 .query-item{
     border: 1px solid #d3d3d3;
     border-radius: 4px;
@@ -1373,6 +1380,15 @@ h3.star-icon span{
     width: 16px;
     height: 16px;
     background-color: #886adf;
+}
+body.blue .block-about .bull{
+    background-color: #0058fc;
+}
+body.green .block-about .bull{
+    background-color: #328b25;
+}
+body.red .block-about .bull{
+    background-color: #c4384c;
 }
 .slider-side.o .man .image a{
     font-size: 12px;
@@ -1675,10 +1691,20 @@ h3.star-icon span{
         max-height: 550px;
         overflow: visible;
     }
+    .activity-block{
+        margin-top: 15px;
+    }
 }
 @media(max-width:768px){
     header{
         display: none;
+    }
+    footer{
+        text-align: center;
+    }
+     footer .logo{
+        background-size: auto auto;
+        background-position: center center;
     }
     ul.menu li{
         display: block;
@@ -1705,11 +1731,20 @@ h3.star-icon span{
     .blog-block .about-empl img{
         width: 40%;
     }
+    .lider-img-contact img{
+        width: 40%;
+    }
     .navbar-header{
         background-image: url("../img/logo-footer.png");
         background-repeat: no-repeat;
         background-position: 10px center;
         background-size: auto 80%;
             
+    }
+    .foto-lider img{
+        display: none;
+    }
+    .subscribe-block{
+        margin-top: 15px;
     }
 }

@@ -1619,10 +1619,18 @@ h3.star-icon span{
     footer .logo{
         background-size: 100% auto;
     }
+    .block-team {
+        max-height: 500px;
+        overflow: visible;
+    }
+    .blog-block.team {
+
+        min-height: 483px;
+    }
 }
 @media screen and (max-width: 992px) {
     body header .logo{
-         background-size: 100% auto;
+        background-size: 100% auto;
     }
     body a{
         font-size: 14px;
@@ -1663,9 +1671,13 @@ h3.star-icon span{
         padding: 0 5px;
         font-size: 11px;
     }
+    .block-team {
+        max-height: 550px;
+        overflow: visible;
+    }
 }
 @media(max-width:768px){
-     header{
+    header{
         display: none;
     }
     ul.menu li{
@@ -1686,5 +1698,18 @@ h3.star-icon span{
     .navbar-collapse{
         border:0;
         box-shadow: none;
+    }
+    .block-team{
+        max-height: none;
+    }
+    .blog-block .about-empl img{
+        width: 40%;
+    }
+    .navbar-header{
+        background-image: url("../img/logo-footer.png");
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-size: auto 80%;
+            
     }
 }

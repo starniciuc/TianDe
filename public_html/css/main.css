@@ -1745,6 +1745,15 @@ body.red .block-about .bull{
     .foto-lider img{
         display: none;
     }
+    .lider-block-sm{
+        width: 40%;
+        float: left;
+        padding: 5px;
+    }
+    .lider-block-sm img{
+        width: 100%;  
+        
+    }    
     .subscribe-block{
         margin-top: 15px;
     }

@@ -1757,4 +1757,24 @@ body.red .block-about .bull{
     .subscribe-block{
         margin-top: 15px;
     }
+    .text-container img{
+        float:none;
+    }
+    .text-container .block-contact-data{
+        margin: 15px 0;
+    }
+    .map-side{
+        width: 100%;
+        margin-bottom: 15px;
+        float: none;
+        border: 1px solid rgba(52, 91, 163, 0.24);
+        border-radius: 5px;
+    }
+    .adress-list{
+        width: 100%;
+        margin-bottom: 15px;
+        float: none;
+        border: 1px solid rgba(52, 91, 163, 0.24);
+        border-radius: 5px;
+    }
 }

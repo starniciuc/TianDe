@@ -118,6 +118,22 @@ body.green a{
 body.red a{
     color:#8d1c2c;
 }
+body.purple .border-top{
+    border-top:1px solid #52359b;
+	padding-top: 5px;
+}
+body.blue .border-top{
+    border-top:1px solid #345ba3;   
+	padding-top: 5px;
+}
+body.green .border-top{
+    border-top:1px solid #328b25;
+	padding-top: 5px;
+}
+body.red .border-top{
+    border-top:1px solid #8d1c2c;
+	padding-top: 5px;
+}
 
 header .contact{
     text-align: right;
@@ -1616,6 +1632,52 @@ body.red .block-about .bull{
     line-height: 30px;
     text-align: center;
     color:#f37324;
+}
+.f24{
+	font-size: 24px;
+}
+.avatar{
+	padding-left: 15px;
+}
+.avatar img{
+	width: 100%;
+	border-radius: 5px;
+}
+li.name{
+	text-transform: uppercase;
+}
+.comment{
+	padding: 15px;
+}
+.clearPadd{
+	padding: 0;
+}
+.comment .item-block .image{
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+.comment .item-block .description p{
+	font-size: 16px;
+}
+.blog-page .item-block .blog-footer ul li a{
+	text-decoration: underline;
+}
+.vis{
+	display: block;
+}
+.vis ul{
+	margin: 0;
+}
+.vis .social{
+	width: 210px;
+}
+.social ul{
+	padding: 0;
+	list-style: none;
+}
+.social ul li{
+	display: inline-block;
 }
 @media screen and (max-width: 1200px) {
     header .contact p a{

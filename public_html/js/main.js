@@ -58,3 +58,14 @@ $(".btn-open-team").click(function() {
 
     });
 });
+$(".reply").click(function() {
+    var mybtn = $(this);
+    var par = mybtn.parents(".parent").children(".collapse");
+    par.collapse("show");
+    par.on('shown.bs.collapse', function() {
+        mybtn.click(function() {
+            par.collapse('hide');
+        });
+    });
+    par.on("hidden.bs.collapse", function() {   });
+});

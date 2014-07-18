@@ -17,6 +17,9 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script>
+			var video = '<iframe width=650" height="250" src="http://www.youtube.com/embed/Lp99IGfHIkA?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+		</script>
     </head>
     <!--
     Change site color!!!
@@ -315,8 +318,8 @@
                         <div class="slider-block pad">
                             <div id="slider1_container2" class="slider1" title="Outer Container" style="position: relative; width: 750px; height: 260px;">
                                 <div u="slides" title="Slides Container" style="position: absolute; left: 50px; top: 0px; width: 650px; height: 260px; overflow: hidden;">
-                                    <div class="image-slide text-center">
-                                        <a href="#"><div class="play"></div></a>
+                                    <div class="image-slide text-center" id="video-side">
+                                        <a href="javascript:void(0)" onclick="document.getElementById('video-side').innerHTML = video;"><div class="play"></div></a>
                                         <img src="img/slide.png">
                                     </div>
                                     <div class="image-slide text-center">
@@ -515,7 +518,7 @@
                 }];
             var options_prod = {
                 $DragOrientation: 3,
-                $AutoPlay: true,
+                $AutoPlay: false,
                 $SlideDuration: 1500,
                 $AutoPlayInterval: 4500,
                 $SlideshowOptions: {//Options which specifies enable slideshow or not

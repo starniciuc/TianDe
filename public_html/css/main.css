@@ -1679,6 +1679,9 @@ li.name{
 .social ul li{
 	display: inline-block;
 }
+#calendar2 td:hover{
+	cursor: pointer;
+}
 @media screen and (max-width: 1200px) {
     header .contact p a{
         font-size: 15px;

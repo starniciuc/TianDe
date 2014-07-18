@@ -32,6 +32,9 @@ function Calendar2(id, year, month) {
         document.querySelector('#' + id + ' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
     }
 }
+$("#calendar2 td").click(function(){
+				$(this).toggleClass("today");
+			});
 $(".btn-open").click(function() {
     var mybtn = $(this);
     var par = mybtn.parents(".blog-page").children(".collapse");

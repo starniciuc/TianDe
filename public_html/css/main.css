@@ -414,10 +414,18 @@ ul.menu li a{
     text-decoration: none;
     padding: 10px 35px;
 }
+ul.menu.new-item li a{
+	padding: 10px 24px;
+}
 ul.menu li a span{
     display: block;
     width: 100%;
     height: 38px;
+}
+ul.menu li a.chart span{
+	width: 45px;
+	height: 60px;
+	float: left;
 }
 
 body.purple ul.menu li:hover{
@@ -465,6 +473,22 @@ body.purple ul.menu li a.contact span{
     background-image: url("../img/menu-purple/contact.png");
     background-repeat: no-repeat;
     background-position: center center;
+}
+ul.menu li a.chart span{
+    background-image: url("../img/chart.png");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+ul.menu li a.chart {
+	white-space: pre;
+	line-height: 18px;
+	width: 160px;
+	background-image: url("../img/bg-chart.png");
+	background-size: auto 100%;
+	height: 80px;
+}
+ul.menu li a.chart:hover{
+	background-image: url("../img/bg-chart-hover.png");
 }
 body.blue ul.menu li:hover{
     background-image: url("../img/menu-blue/bg-active.png");
@@ -1682,6 +1706,20 @@ li.name{
 #calendar2 td:hover{
 	cursor: pointer;
 }
+.new-header{
+	padding-top: 20px!important;
+}
+.new-header .social{
+	width: 100%!important;
+	margin-top: 10px!important;
+}
+.new-header .search{
+	width: 100%!important;
+}
+.new-header .search input{
+	width: 85%!important;
+	float: right !important;
+}
 @media screen and (max-width: 1200px) {
     header .contact p a{
         font-size: 15px;
@@ -1709,6 +1747,12 @@ li.name{
 
         min-height: 483px;
     }
+	ul.menu.new-item li a{
+		padding:10px 17px;
+	}
+	ul.menu li a.chart{
+		width: 150px;
+	}
 }
 @media screen and (max-width: 992px) {
     body header .logo{
@@ -1760,6 +1804,15 @@ li.name{
     .activity-block{
         margin-top: 15px;
     }
+	ul.menu.new-item li a{
+		padding:10px 4px;
+	}
+	ul.menu li a.home{
+		width: 35px;
+	}
+	ul.menu li a.chart{
+		width: 120px;
+	}
 }
 @media(max-width:768px){
     header{
@@ -1842,4 +1895,16 @@ li.name{
         border: 1px solid rgba(52, 91, 163, 0.24);
         border-radius: 5px;
     }
+	ul.menu li a.chart{
+		background: none;
+		height: auto;
+		text-align: center;
+		margin: 0 auto;
+	}
+	ul.menu li a.chart:hover{
+		background: none;
+	}
+	.navbar-collapse{
+		max-height: 370px;
+	}
 }

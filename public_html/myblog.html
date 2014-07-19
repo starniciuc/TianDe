@@ -16,6 +16,9 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script>
+            var video = '<iframe width="325" height="270" src="http://www.youtube.com/embed/Lp99IGfHIkA?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+        </script>
     </head>
     <body class="purple">
         <!--[if lt IE 7]>
@@ -104,325 +107,330 @@
                         <div class="title-block clearfix">
                             <div class="name hand">Мой блог</div><div class="arr"></div>
                         </div>   
-                        <div class="text-container">
+                        <div class="text-container clearfix">
                             <h4>Большое летнее путешествие команды TianDe – Одинцовы!</h4>
                             <img src="img/article.png">
                             <p>Мы рады приветствовать Вас на официальной интернет-странице команды TianDe – Одинцовы!</p>
                             <p>В Корпорации красоты и здоровья TianDe существует добрая традиция! Первое, что говорят каждому новому партнеру Правообладатели бренда TianDe и мы – Лидеры: «Добро пожаловать!». Это не формальное приветствие. Мы уверены, что вместе с добром в нашу жизнь приходят любовь, богатство, гармония, процветание и много-много людей, которые так же как мы стремятся ко всему этому.
                                 В самом начале нашего развития мы делали ставку, прежде всего, на продукцию Корпорации – качественную, эксклюзивную, сочетающую в себе мудрость древних 
                                 лекарей и достижения современной науки. Следующей ступенью стало принятие бизнес-стратегии, которая заложила экономическую и финансовую основу процветания партнеров Корпорация. Для развития команд Лидеров, поддержки людей, ведущих свои клиентские группы, разработана современная система квадрообучения, объединяющая офлайн и онлайн технологии.</p>
+                            <div class="image-play play-block clearfix" id="video-side">
+                                <img src="img/about-play.png">
+                                <a href="javascript:void(0)" onclick="document.getElementById('video-side').innerHTML = video;"><div class="play"></div></a>
+                            </div>
+                            
                             <hr>                            						
                         </div>
-						<div class="blog-footer">
-							<ul>
-								<li>27.06.2014 |</li>
-								<li><a href="#">94 комментария</a> |</li>
-								<li>
-									<div class="share">
-										Поделится
-										<div class="hover-social">                                                    
-											<div class="social">
-												<div class="arr"></div>
-												<ul>
-													<li><a href=""><img src="img/vk.png"></a></li>
-													<li><a href=""><img src="img/ok-icon.png"></a></li>
-													<li><a href=""><img src="img/fb-icon.png"></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="hover-social vis">
-							<div class="social">
-								<ul>
-									<li>Войдите</li>
-									<li><a href=""><img src="img/vk.png"></a></li>
-									<li><a href=""><img src="img/ok-icon.png"></a></li>
-									<li><a href=""><img src="img/fb-icon.png"></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="form-side">
+                        <div class="blog-footer">
+                            <ul>
+                                <li>27.06.2014 |</li>
+                                <li><a href="#">94 комментария</a> |</li>
+                                <li>
+                                    <div class="share">
+                                        Поделится
+                                        <div class="hover-social">                                                    
+                                            <div class="social">
+                                                <div class="arr"></div>
+                                                <ul>
+                                                    <li><a href=""><img src="img/vk.png"></a></li>
+                                                    <li><a href=""><img src="img/ok-icon.png"></a></li>
+                                                    <li><a href=""><img src="img/fb-icon.png"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hover-social vis">
+                            <div class="social">
+                                <ul>
+                                    <li>Войдите</li>
+                                    <li><a href=""><img src="img/vk.png"></a></li>
+                                    <li><a href=""><img src="img/ok-icon.png"></a></li>
+                                    <li><a href=""><img src="img/fb-icon.png"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-side">
                             <h3 class="text-left f24">Оставте свой комментарий</h3>
                             <div class="row">
                                 <div class="col-sm-12 query-form">
                                     <form>
                                         <div class="form-group">
-											<div class="row">
-												<div class="col-sm-2 hidden-xs">
-													<div class="avatar">
-														<img src="img/no-foto.png" alt="no foto">
-													</div>
-												</div>
-												<div class="col-sm-10">
-													<textarea placeholder="Комментарий" class="form-control" ></textarea>
-												</div>
-											</div>
+                                            <div class="row">
+                                                <div class="col-sm-2 hidden-xs">
+                                                    <div class="avatar">
+                                                        <img src="img/no-foto.png" alt="no foto">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-10">
+                                                    <textarea placeholder="Комментарий" class="form-control" ></textarea>
+                                                </div>
+                                            </div>
                                         </div>
-										<div class="form-group text-center">
-											<button type="submit" class="btn-submit query"><span></span>Комментировать</button>
-										</div>
+                                        <div class="form-group text-center">
+                                            <button type="submit" class="btn-submit query"><span></span>Комментировать</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-						<div class="comments-area">
-							<div class="blog-block blog-page comment">
-								<div class="item-block clearfix">
-									<div class="row">
-										<div class="col-xs-2 clearPadd">
-											<div class="image">
-												<img src="img/coment1.png">
-											</div>
-										</div>
-										<div class="col-xs-10 parent">
-											<div class="blog-footer">
-												<ul>
-													<li class="name">Ирина</li>
-													<li>| 27.06.2014</li>
-												</ul>
-											</div>
-											<div class="description">
-												<p>Здравствуйте! Все идеальное просто! Просто супер!</p>
-											</div>
-											<div class="blog-footer border-top">
-												<ul>
-													<li><a href="#"><img src="img/like.png"></a></li>
-													<li><a href="#"><img src="img/dislike.png"></a></li>
-													<li>| <a href="javascript:void(0)" class="reply">Ответить</a> |</li>
-													<li>
-														<div class="share">
-															Поделится
-															<div class="hover-social">                                                    
-																<div class="social">
-																	<div class="arr"></div>
-																	<ul>
-																		<li><a href=""><img src="img/vk.png"></a></li>
-																		<li><a href=""><img src="img/ok-icon.png"></a></li>
-																		<li><a href=""><img src="img/fb-icon.png"></a></li>
-																	</ul>
-																</div>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</div>
-											<div class="collapse">
-												<div class="form-side">
-													<div class="row">
-														<div class="col-sm-12 query-form">
-															<form>
-																<div class="form-group">
-																	<div class="row">
-																		<div class="col-sm-12">
-																			<textarea placeholder="Комментарий" class="form-control" ></textarea>
-																		</div>
-																	</div>
-																</div>
-																<div class="form-group text-center">
-																	<button type="submit" class="btn-submit query"><span></span>Комментировать</button>
-																</div>
-															</form>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="blog-block blog-page comment">
-								<div class="item-block clearfix">
-									<div class="row">
-										<div class="col-xs-2 clearPadd">
-											<div class="image">
-												<img src="img/coment2.png">
-											</div>
-										</div>
-										<div class="col-xs-10 parent">
-											<div class="blog-footer">
-												<ul>
-													<li class="name">Ирина</li>
-													<li>| 27.06.2014</li>
-												</ul>
-											</div>
-											<div class="description">
-												<p>Здравствуйте! Для изготовления нашей продукции мы используем только природные компоненты, такие как: змеиный жир и кожа, овечья плацента, экстракт ласточкиного гнезда, красная икра, шелковый белок, женьшень, имбирь, лотос, жемчуг, золото, серебро.</p>
-											</div>
-											<div class="blog-footer border-top">
-												<ul>
-													<li><a href="#"><img src="img/like.png"></a></li>
-													<li><a href="#"><img src="img/dislike.png"></a></li>
-													<li>| <a href="javascript:void(0)" class="reply">Ответить</a> |</li>
-													<li>
-														<div class="share">
-															Поделится
-															<div class="hover-social">                                                    
-																<div class="social">
-																	<div class="arr"></div>
-																	<ul>
-																		<li><a href=""><img src="img/vk.png"></a></li>
-																		<li><a href=""><img src="img/ok-icon.png"></a></li>
-																		<li><a href=""><img src="img/fb-icon.png"></a></li>
-																	</ul>
-																</div>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</div>
-											<div class="collapse">
-												<div class="form-side">
-													<div class="row">
-														<div class="col-sm-12 query-form">
-															<form>
-																<div class="form-group">
-																	<div class="row">
-																		<div class="col-sm-12">
-																			<textarea placeholder="Комментарий" class="form-control" ></textarea>
-																		</div>
-																	</div>
-																</div>
-																<div class="form-group text-center">
-																	<button type="submit" class="btn-submit query"><span></span>Комментировать</button>
-																</div>
-															</form>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="blog-block blog-page comment">
-								<div class="item-block clearfix">
-									<div class="row">
-										<div class="col-xs-2 clearPadd">
-											<div class="image">
-												<img src="img/coment3.png">
-											</div>
-										</div>
-										<div class="col-xs-10 parent">
-											<div class="blog-footer">
-												<ul>
-													<li class="name">Ирина</li>
-													<li>| 27.06.2014</li>
-												</ul>
-											</div>
-											<div class="description">
-												<p>Здравствуйте! Для изготовления нашей продукции мы используем только природные компоненты, такие как: змеиный жир и кожа, овечья плацента, экстракт ласточкиного гнезда, красная икра, шелковый белок, женьшень, имбирь, лотос, жемчуг, золото, серебро.</p>
-											</div>
-											<div class="blog-footer border-top">
-												<ul>
-													<li><a href="#"><img src="img/like.png"></a></li>
-													<li><a href="#"><img src="img/dislike.png"></a></li>
-													<li>| <a href="javascript:void(0)" class="reply">Ответить</a> |</li>
-													<li>
-														<div class="share">
-															Поделится
-															<div class="hover-social">                                                    
-																<div class="social">
-																	<div class="arr"></div>
-																	<ul>
-																		<li><a href=""><img src="img/vk.png"></a></li>
-																		<li><a href=""><img src="img/ok-icon.png"></a></li>
-																		<li><a href=""><img src="img/fb-icon.png"></a></li>
-																	</ul>
-																</div>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</div>
-											<div class="collapse">
-												<div class="form-side">
-													<div class="row">
-														<div class="col-sm-12 query-form">
-															<form>
-																<div class="form-group">
-																	<div class="row">
-																		<div class="col-sm-12">
-																			<textarea placeholder="Комментарий" class="form-control" ></textarea>
-																		</div>
-																	</div>
-																</div>
-																<div class="form-group text-center">
-																	<button type="submit" class="btn-submit query"><span></span>Комментировать</button>
-																</div>
-															</form>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="reply">
-												<div class="col-xs-2 clearPadd">
-													<div class="image">
-														<img src="img/coment4.png">
-													</div>
-												</div>
-												<div class="col-xs-10 parent">
-													<div class="blog-footer">
-														<ul>
-															<li class="name">Ирина</li>
-															<li>| 27.06.2014</li>
-														</ul>
-													</div>
-													<div class="description">
-														<p>Мы используем старинные китайские, тибетские и алтайские рецепты, с учетом современных технологических решений.</p>
-													</div>
-													<div class="blog-footer border-top">
-														<ul>
-															<li><a href="#"><img src="img/like.png"></a></li>
-															<li><a href="#"><img src="img/dislike.png"></a></li>
-															<li>| <a href="javascript:void(0)" class="reply">Ответить</a> |</li>
-															<li>
-																<div class="share">
-																	Поделится
-																	<div class="hover-social">                                                    
-																		<div class="social">
-																			<div class="arr"></div>
-																			<ul>
-																				<li><a href=""><img src="img/vk.png"></a></li>
-																				<li><a href=""><img src="img/ok-icon.png"></a></li>
-																				<li><a href=""><img src="img/fb-icon.png"></a></li>
-																			</ul>
-																		</div>
-																	</div>
-																</div>
-															</li>
-														</ul>
-													</div>
-													<div class="collapse in">
-														<div class="form-side">
-															<div class="row">
-																<div class="col-sm-12 query-form">
-																	<form>
-																		<div class="form-group">
-																			<div class="row">
-																				<div class="col-sm-12">
-																					<textarea placeholder="Комментарий" class="form-control" ></textarea>
-																				</div>
-																			</div>
-																		</div>
-																		<div class="form-group text-center">
-																			<button type="submit" class="btn-submit query"><span></span>Комментировать</button>
-																		</div>
-																	</form>
-																</div>
-															</div>
-														</div>
-													</div>
+                        <div class="comments-area">
+                            <div class="blog-block blog-page comment">
+                                <div class="item-block clearfix">
+                                    <div class="row">
+                                        <div class="col-xs-2 clearPadd">
+                                            <div class="image">
+                                                <img src="img/coment1.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-10 parent">
+                                            <div class="blog-footer">
+                                                <ul>
+                                                    <li class="name">Ирина</li>
+                                                    <li>| 27.06.2014</li>
+                                                </ul>
+                                            </div>
+                                            <div class="description">
+                                                <p>Здравствуйте! Все идеальное просто! Просто супер!</p>
+                                            </div>
+                                            <div class="blog-footer border-top">
+                                                <ul>
+                                                    <li><a href="#"><img src="img/like.png"></a></li>
+                                                    <li><a href="#"><img src="img/dislike.png"></a></li>
+                                                    <li>| <a href="javascript:void(0)" class="reply">Ответить</a> |</li>
+                                                    <li>
+                                                        <div class="share">
+                                                            Поделится
+                                                            <div class="hover-social">                                                    
+                                                                <div class="social">
+                                                                    <div class="arr"></div>
+                                                                    <ul>
+                                                                        <li><a href=""><img src="img/vk.png"></a></li>
+                                                                        <li><a href=""><img src="img/ok-icon.png"></a></li>
+                                                                        <li><a href=""><img src="img/fb-icon.png"></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="collapse">
+                                                <div class="form-side">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 query-form">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <textarea placeholder="Комментарий" class="form-control" ></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group text-center">
+                                                                    <button type="submit" class="btn-submit query"><span></span>Комментировать</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-block blog-page comment">
+                                <div class="item-block clearfix">
+                                    <div class="row">
+                                        <div class="col-xs-2 clearPadd">
+                                            <div class="image">
+                                                <img src="img/coment2.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-10 parent">
+                                            <div class="blog-footer">
+                                                <ul>
+                                                    <li class="name">Ирина</li>
+                                                    <li>| 27.06.2014</li>
+                                                </ul>
+                                            </div>
+                                            <div class="description">
+                                                <p>Здравствуйте! Для изготовления нашей продукции мы используем только природные компоненты, такие как: змеиный жир и кожа, овечья плацента, экстракт ласточкиного гнезда, красная икра, шелковый белок, женьшень, имбирь, лотос, жемчуг, золото, серебро.</p>
+                                            </div>
+                                            <div class="blog-footer border-top">
+                                                <ul>
+                                                    <li><a href="#"><img src="img/like.png"></a></li>
+                                                    <li><a href="#"><img src="img/dislike.png"></a></li>
+                                                    <li>| <a href="javascript:void(0)" class="reply">Ответить</a> |</li>
+                                                    <li>
+                                                        <div class="share">
+                                                            Поделится
+                                                            <div class="hover-social">                                                    
+                                                                <div class="social">
+                                                                    <div class="arr"></div>
+                                                                    <ul>
+                                                                        <li><a href=""><img src="img/vk.png"></a></li>
+                                                                        <li><a href=""><img src="img/ok-icon.png"></a></li>
+                                                                        <li><a href=""><img src="img/fb-icon.png"></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="collapse">
+                                                <div class="form-side">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 query-form">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <textarea placeholder="Комментарий" class="form-control" ></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group text-center">
+                                                                    <button type="submit" class="btn-submit query"><span></span>Комментировать</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-block blog-page comment">
+                                <div class="item-block clearfix">
+                                    <div class="row">
+                                        <div class="col-xs-2 clearPadd">
+                                            <div class="image">
+                                                <img src="img/coment3.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-10 parent">
+                                            <div class="blog-footer">
+                                                <ul>
+                                                    <li class="name">Ирина</li>
+                                                    <li>| 27.06.2014</li>
+                                                </ul>
+                                            </div>
+                                            <div class="description">
+                                                <p>Здравствуйте! Для изготовления нашей продукции мы используем только природные компоненты, такие как: змеиный жир и кожа, овечья плацента, экстракт ласточкиного гнезда, красная икра, шелковый белок, женьшень, имбирь, лотос, жемчуг, золото, серебро.</p>
+                                            </div>
+                                            <div class="blog-footer border-top">
+                                                <ul>
+                                                    <li><a href="#"><img src="img/like.png"></a></li>
+                                                    <li><a href="#"><img src="img/dislike.png"></a></li>
+                                                    <li>| <a href="javascript:void(0)" class="reply">Ответить</a> |</li>
+                                                    <li>
+                                                        <div class="share">
+                                                            Поделится
+                                                            <div class="hover-social">                                                    
+                                                                <div class="social">
+                                                                    <div class="arr"></div>
+                                                                    <ul>
+                                                                        <li><a href=""><img src="img/vk.png"></a></li>
+                                                                        <li><a href=""><img src="img/ok-icon.png"></a></li>
+                                                                        <li><a href=""><img src="img/fb-icon.png"></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="collapse">
+                                                <div class="form-side">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 query-form">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <textarea placeholder="Комментарий" class="form-control" ></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group text-center">
+                                                                    <button type="submit" class="btn-submit query"><span></span>Комментировать</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="reply">
+                                                <div class="col-xs-2 clearPadd">
+                                                    <div class="image">
+                                                        <img src="img/coment4.png">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-10 parent">
+                                                    <div class="blog-footer">
+                                                        <ul>
+                                                            <li class="name">Ирина</li>
+                                                            <li>| 27.06.2014</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="description">
+                                                        <p>Мы используем старинные китайские, тибетские и алтайские рецепты, с учетом современных технологических решений.</p>
+                                                    </div>
+                                                    <div class="blog-footer border-top">
+                                                        <ul>
+                                                            <li><a href="#"><img src="img/like.png"></a></li>
+                                                            <li><a href="#"><img src="img/dislike.png"></a></li>
+                                                            <li>| <a href="javascript:void(0)" class="reply">Ответить</a> |</li>
+                                                            <li>
+                                                                <div class="share">
+                                                                    Поделится
+                                                                    <div class="hover-social">                                                    
+                                                                        <div class="social">
+                                                                            <div class="arr"></div>
+                                                                            <ul>
+                                                                                <li><a href=""><img src="img/vk.png"></a></li>
+                                                                                <li><a href=""><img src="img/ok-icon.png"></a></li>
+                                                                                <li><a href=""><img src="img/fb-icon.png"></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="collapse in">
+                                                        <div class="form-side">
+                                                            <div class="row">
+                                                                <div class="col-sm-12 query-form">
+                                                                    <form>
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-12">
+                                                                                    <textarea placeholder="Комментарий" class="form-control" ></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group text-center">
+                                                                            <button type="submit" class="btn-submit query"><span></span>Комментировать</button>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="col-sm-4 hidden-sm hidden-xs">
@@ -536,7 +544,7 @@
             </footer>
 
         </div>
-		<div class="modal fade bs-example-modal-md" id="gotoform" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal fade bs-example-modal-md" id="gotoform" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-md modal-vertical-centered  modal-def">
                 <div class="modal-content modal-pers">
                     <div class="right-block">
@@ -555,7 +563,7 @@
                 </div>
             </div>
         </div>
-		<div class="modal fade bs-example-modal-md" id="login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal fade bs-example-modal-md" id="login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-md modal-vertical-centered  modal-def">
                 <div class="modal-content modal-pers">
                     <div class="right-block">
@@ -588,30 +596,30 @@
         <script type="text/javascript" src="js/jssor.slider.js"></script>
         <script src="js/main.js"></script>
         <script>
-			var options_prod1 = {
-				$DragOrientation: 0, //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-				$ArrowNavigatorOptions: {
-					$Class: $JssorArrowNavigator$, //[Required] Class to create arrow navigator instance
-					$ChanceToShow: 2                                //[Required] 0 Never, 1 Mouse Over, 2 Always
-				},
-			};
-			var jssor_slider_prod3 = new $JssorSlider$("slider1_container3", options_prod1);
-			function ScaleSlider() {
+            var options_prod1 = {
+                $DragOrientation: 0, //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$, //[Required] Class to create arrow navigator instance
+                    $ChanceToShow: 2                                //[Required] 0 Never, 1 Mouse Over, 2 Always
+                },
+            };
+            var jssor_slider_prod3 = new $JssorSlider$("slider1_container3", options_prod1);
+            function ScaleSlider() {
 
-				var parentWidth1 = jssor_slider_prod3.$Elmt.parentNode.clientWidth;
-				if (parentWidth1) {
+                var parentWidth1 = jssor_slider_prod3.$Elmt.parentNode.clientWidth;
+                if (parentWidth1) {
 
-					jssor_slider_prod3.$SetScaleWidth(Math.min(parentWidth1, 360));
-				}
-				else
-					window.setTimeout(ScaleSlider, 30);
-			}
+                    jssor_slider_prod3.$SetScaleWidth(Math.min(parentWidth1, 360));
+                }
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
 
-			ScaleSlider();
+            ScaleSlider();
 
-			if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-				$(window).bind('resize', ScaleSlider);
-			}
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            }
         </script>
     </body>
 </html>

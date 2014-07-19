@@ -1720,6 +1720,11 @@ li.name{
 	width: 85%!important;
 	float: right !important;
 }
+.play-block{
+    margin-right: 10px; 
+    float: none; 
+    width: 325px;
+}
 @media screen and (max-width: 1200px) {
     header .contact p a{
         font-size: 15px;

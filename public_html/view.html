@@ -16,6 +16,9 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script>
+            var video = '<iframe width=610" height="380" src="http://www.youtube.com/embed/Lp99IGfHIkA?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+        </script>
     </head>
     <body class="purple">
         <!--[if lt IE 7]>
@@ -113,7 +116,8 @@
 
                                     <!-- Slides Container -->
                                     <div u="slides" style="cursor: move; position: absolute; left: 70px; top: 0px; width: 610px; height: 380px; text-align: center; overflow: hidden;">
-                                        <div class="item-view">
+                                        <div class="item-view" id="video-side">
+                                            <a href="javascript:void(0)" onclick="document.getElementById('video-side').innerHTML = video;"><div class="play"></div></a>
                                             <img u="image" src="img/view/karera.png" class="view-img"/>
                                         </div>
                                         <div class="item-view">
@@ -309,75 +313,75 @@
 
 
 
-			jQuery(document).ready(function($) {
-				var options_prod1 = {
-					$DragOrientation: 0, //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-					$ArrowNavigatorOptions: {
-						$Class: $JssorArrowNavigator$, //[Required] Class to create arrow navigator instance
-						$ChanceToShow: 2                                //[Required] 0 Never, 1 Mouse Over, 2 Always
-					},
-				};
-				var options = {
-					$AutoPlay: true, //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-					$AutoPlayInterval: 4000, //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-					$SlideDuration: 500, //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-					$DragOrientation: 3, //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-					$ArrowNavigatorOptions: {
-							$Class: $JssorArrowNavigator$, //[Requried] Class to create arrow navigator instance
-							$ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
-							$AutoCenter: 2, //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-							$Steps: 1                                      //[Optional] Steps to go for each navigation request, default value is 1
-						},
-					$ThumbnailNavigatorOptions: {
-						$Class: $JssorThumbnailNavigator$, //[Required] Class to create thumbnail navigator instance
-						$ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
+            jQuery(document).ready(function($) {
+                var options_prod1 = {
+                    $DragOrientation: 0, //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$, //[Required] Class to create arrow navigator instance
+                        $ChanceToShow: 2                                //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    },
+                };
+                var options = {
+                    $AutoPlay: false, //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                    $AutoPlayInterval: 4000, //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                    $SlideDuration: 500, //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                    $DragOrientation: 3, //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$, //[Requried] Class to create arrow navigator instance
+                        $ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
+                        $AutoCenter: 2, //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                        $Steps: 1                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    },
+                    $ThumbnailNavigatorOptions: {
+                        $Class: $JssorThumbnailNavigator$, //[Required] Class to create thumbnail navigator instance
+                        $ChanceToShow: 2, //[Required] 0 Never, 1 Mouse Over, 2 Always
 
-						$Loop: 2, //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
-						$SpacingX: 6, //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
-						$SpacingY: 6, //[Optional] Vertical space between each thumbnail in pixel, default value is 0
-						$DisplayPieces: 4, //[Optional] Number of pieces to display, default value is 1
-						$ParkingPosition: 204, //[Optional] The offset position to park thumbnail,
-
-						
-					}
-				};
-
-				var jssor_slider1_view = new $JssorSlider$("slider1_container_view", options);
-				var jssor_slider_prod3 = new $JssorSlider$("slider1_container3", options_prod1);
-				//responsive code begin
-				//you can remove responsive code if you don't want the slider scales while window resizes
-				function ScaleSlider() {
-					var parentWidth = jssor_slider1_view.$Elmt.parentNode.clientWidth;
-					var parentWidth1 = jssor_slider_prod3.$Elmt.parentNode.clientWidth;
-					if (parentWidth) {
-						jssor_slider1_view.$SetScaleWidth(Math.min(parentWidth, 750));
-						jssor_slider_prod3.$SetScaleWidth(Math.min(parentWidth1, 360));
-					}
-					else
-						window.setTimeout(ScaleSlider, 30);
-				}
-
-				ScaleSlider();
-
-				if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
-					$(window).bind('resize', ScaleSlider);
-				}
+                        $Loop: 2, //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
+                        $SpacingX: 6, //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                        $SpacingY: 6, //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+                        $DisplayPieces: 4, //[Optional] Number of pieces to display, default value is 1
+                        $ParkingPosition: 204, //[Optional] The offset position to park thumbnail,
 
 
-				//if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
-				//    $(window).bind("orientationchange", ScaleSlider);
-				//}
-				//responsive code end
-			});
-			Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
-			//переключатель минус месяц
-			document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
-				Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) - 1);
-			}
-			// переключатель плюс месяц
-			document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
-				Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) + 1);
-			}
+                    }
+                };
+
+                var jssor_slider1_view = new $JssorSlider$("slider1_container_view", options);
+                var jssor_slider_prod3 = new $JssorSlider$("slider1_container3", options_prod1);
+                //responsive code begin
+                //you can remove responsive code if you don't want the slider scales while window resizes
+                function ScaleSlider() {
+                    var parentWidth = jssor_slider1_view.$Elmt.parentNode.clientWidth;
+                    var parentWidth1 = jssor_slider_prod3.$Elmt.parentNode.clientWidth;
+                    if (parentWidth) {
+                        jssor_slider1_view.$SetScaleWidth(Math.min(parentWidth, 750));
+                        jssor_slider_prod3.$SetScaleWidth(Math.min(parentWidth1, 360));
+                    }
+                    else
+                        window.setTimeout(ScaleSlider, 30);
+                }
+
+                ScaleSlider();
+
+                if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                    $(window).bind('resize', ScaleSlider);
+                }
+
+
+                //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+                //    $(window).bind("orientationchange", ScaleSlider);
+                //}
+                //responsive code end
+            });
+            Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+            //переключатель минус месяц
+            document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+                Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) - 1);
+            }
+            // переключатель плюс месяц
+            document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+                Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) + 1);
+            }
 
         </script>
     </body>

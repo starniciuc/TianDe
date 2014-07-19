@@ -288,19 +288,21 @@ body .play:hover{
     background-image: url("../img/play-h.png");
 }
 #slider1_container_view {
-	text-align: center;
+    text-align: center;
 }
 #slider1_container_view .item-view{
-	text-align: center;
-	 border:1px solid #c9c9c9;
+    text-align: center;
+    /*border:1px solid #c9c9c9;*/
 }
 #slider1_container_view .view-img{
-	border: 0;
+    border: 1px solid #c9c9c9;
     border-radius: 0;
-    margin: 0;
+    margin: 0 auto;
     float: none;
-	max-width: 100% !important;
-	height: auto !important;
+    width: auto !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
+    position: initial !important;
 }
 .jssort07 .i {
     position: absolute;

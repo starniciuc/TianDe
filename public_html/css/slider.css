@@ -257,9 +257,12 @@ body.red .man .image .bull{
     content: "";
     clear: both;
 }
+
 .image-slide img{
-    border:1px solid #d0d0d0;
-    border-radius: 4px;
+	max-width: 492px;
+	max-height: 256px;
+	border:1px solid #d0d0d0;
+	border-radius: 4px;
 }
 .image-slide{
     position: relative;

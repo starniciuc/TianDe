@@ -352,3 +352,7 @@ body .play:hover{
     -webkit-transition: none;
     -o-transition: none;
 }
+.videoCover{
+	cursor: pointer;
+	
+}

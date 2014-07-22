@@ -17,9 +17,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-		<script>
-			var video = '<iframe width=488" height="252" src="http://www.youtube.com/embed/Lp99IGfHIkA?autoplay=1" frameborder="0" allowfullscreen></iframe>';
-		</script>
+		
     </head>
     <!--
     Change site color!!!
@@ -322,10 +320,20 @@
                         <div class="slider-block pad">
                             <div id="slider1_container2" class="slider1" title="Outer Container" style="position: relative; width: 750px; height: 260px;">
                                 <div u="slides" title="Slides Container" style="position: absolute; left: 50px; top: 0px; width: 650px; height: 260px; overflow: hidden;">
-                                    <div class="image-slide text-center" id="video-side">
-                                        <a href="javascript:void(0)" onclick="document.getElementById('video-side').innerHTML = video;"><div class="play"></div></a>
-                                        <img src="img/slide.png">
-                                    </div>
+                                    <div>
+										<div u="player" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 490px; height: 255px; overflow: hidden;">
+											<!-- iframe in ebay page is not allowed, youtube iframe video is not supported for ebay listing -->
+											<iframe pHandler="ytiframe" pHideControls="0" width="488" height="252" style="z-index: 0; border-radius: 10px;" url="http://www.youtube.com/embed/gk-uLQ9edhU?enablejsapi=1&version=3&playerapiid=ytplayer&fs=1&wmode=transparent" frameborder="0" scrolling="no"></iframe>
+											<!-- play cover begin (optional, can remove play cover) -->
+											<div u="cover" class="videoCover" 
+												 style="position: absolute;  top: 0px;  left: 0px; display: none;  z-index: 1;">
+												<div class="image-slide text-center">
+													<div class="play"></div>
+													<img src="img/slide.png">
+												</div>
+											</div>
+										</div>
+									</div>
                                     <div class="image-slide text-center">
                                         <img src="img/slide.png">
                                     </div>
@@ -505,6 +513,7 @@
         <script type="text/javascript" src="js/jssor.core.js"></script>
         <script type="text/javascript" src="js/jssor.utils.js"></script>
         <script type="text/javascript" src="js/jssor.slider.js"></script>
+		<script src="js/jssor.player.ytiframe.min.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
         <script>
             var _SlideshowTransitions = [{
@@ -522,7 +531,7 @@
                 }];
             var options_prod = {
                 $DragOrientation: 3,
-                $AutoPlay: false,
+                $AutoPlay: true,
                 $SlideDuration: 1500,
                 $AutoPlayInterval: 4500,
                 $SlideshowOptions: {//Options which specifies enable slideshow or not
@@ -566,7 +575,8 @@
             //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
                 //    $(window).bind("orientationchange", ScaleSlider);
                 //}
-                //responsive code end
+                //responsive code end.
+				$JssorPlayer$.$FetchPlayers(document.body);
         </script>
         <script>
             $(document).ready(function() {

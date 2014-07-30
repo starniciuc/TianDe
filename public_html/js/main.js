@@ -72,3 +72,7 @@ $(".reply").click(function() {
     });
     par.on("hidden.bs.collapse", function() {   });
 });
+
+$(".category-link").click(function(){
+	$(this).toggleClass("selected");
+});

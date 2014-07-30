@@ -1754,6 +1754,14 @@ body.red .category ul li a{
 .category ul li a.selected{
 	border: 1px solid #c0dbfe;	
 }
+.blog-page .item-block  .blog-footer li a.category-link{
+	font-size: 14px;
+	text-decoration: none;
+	padding: 0 10px;
+}
+.blog-footer li a.category-link.selected{
+	border: 1px solid #c0dbfe;
+}
 @media screen and (max-width: 1200px) {
     header .contact p a{
         font-size: 15px;

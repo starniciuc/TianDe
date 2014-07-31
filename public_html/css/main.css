@@ -814,6 +814,15 @@ footer a.alente{
     height: 52px;
     line-height: 52px;
 }
+.title-block .name a{
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+title-block .name a:hover{
+	text-decoration: none;
+}
 body.blue .title-block .name{
     background-color:#007BFF;
 }

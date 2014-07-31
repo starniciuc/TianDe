@@ -819,6 +819,7 @@ footer a.alente{
     color: #FFFFFF;
     text-transform: uppercase;
     font-size: 18px;
+	text-decoration: none;
 }
 title-block .name a:hover{
 	text-decoration: none;

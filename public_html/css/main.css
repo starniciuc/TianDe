@@ -1838,9 +1838,13 @@ body.red .category ul li a{
     ul.menu li a{
         padding: 10px 13px;
     }
-    .title-block .name{
+    .title-block .name
+	{
         font-size: 15px;
         width: 230px;
+    }
+    .title-block .name a{
+        font-size: 15px;
     }
     .subscribe-block p{
         padding: 16px 10px 17px;

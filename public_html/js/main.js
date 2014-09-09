@@ -76,3 +76,14 @@ $(".reply").click(function() {
 $(".category-link").click(function(){
 	$(this).toggleClass("selected");
 });
+$(".open-rasilka").click(function(){
+    $(this).toggleClass("close-rasilka");
+    $(".subs-text").toggleClass("none");
+})
+$(document).ready(function(){
+    setTimeout(function(){
+        $("#viewdetails").collapse();
+        $(".open-rasilka").toggleClass("close-rasilka");
+        $(".subs-text").toggleClass("none");
+    },3000);
+});

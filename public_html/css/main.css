@@ -2,6 +2,7 @@
    Author's custom styles
    ========================================================================== */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic);
 
 @import url("calendar.css");
 @import url("scroll.css");
@@ -1664,6 +1665,9 @@ body.red .block-about .bull{
     background-image: url("../img/close.png");
     opacity: 1;
 }
+.modal-md .close:hover{
+    background-image: url("../img/close-hover.png");
+}
 .modal-md .info-p{
     font-size: 20px;    
     padding: 0 60px;
@@ -1828,6 +1832,208 @@ body .more-query a span {
 }
 .padingLeft0{
     padding-left: 0;
+}
+.form-side.query-form-side.in-view{
+    padding: 0;
+    margin: 20px 0;
+}
+.form-side.query-form-side h2{
+    margin: 0;
+    background-image: url("../img/bg-comment.png");
+    color: #0058fc;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 15px 15px;
+    text-transform: uppercase;
+}
+.form-side.query-form-side h2 span{
+    padding: 15px 20px;
+    background-image: url("../img/coment-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#hypercomments_widget{
+    padding: 10px;
+}
+.blog-footer.redesign ul li{
+    color:#008bfd;
+    font-size: 14px;
+}
+.blog-footer.redesign ul li a{
+    color:#008bfd;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 2px 10px !important;
+}
+.blog-footer.redesign ul li a.social-a{
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-position: 2px 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/social-icons.png");
+    margin-bottom: -10px;
+}
+.blog-footer.redesign ul li a.social-a.vk{
+    background-position: -2px 0;
+}
+.blog-footer.redesign ul li a.social-a.fb{
+    background-position: -30px -1px;
+}
+.blog-footer.redesign ul li a.social-a.tw{
+    background-position: -58px -1px;
+}
+.blog-footer.redesign ul li a.social-a.od{
+    background-position: -88px -1px;
+}
+.blog-footer.redesign ul li a.social-a.yt{
+    background-position: -118px -1px;
+}
+.blog-footer.redesign ul li a.social-a.inst{
+    background-position: -148px -1px;
+}
+.blog-footer.redesign ul li .share-this{
+    background-color: #1767fc;
+    color: #FFFFFF;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    height: 24px;
+    line-height: 23px;
+}
+.blog-footer.redesign ul li .arr-right{
+    background-image: url("../img/arrow-right-comment.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 23px;
+    display: inline-block;
+    margin-bottom: -7px;
+}
+ul.head-social li a.social-a{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-position: 2px 0;
+    background-repeat: no-repeat;
+    background-image: url("../img/social-icons-head.png");
+    margin-bottom: -10px;
+}
+ul.head-social li a.social-a.vk{
+    background-position: -2px 0;
+}
+ul.head-social li a.social-a.fb{
+    background-position: -35px -1px;
+}
+ul.head-social li a.social-a.tw{
+    background-position: -69px -1px;
+}
+ul.head-social li a.social-a.od{
+    background-position: -104px -1px;
+}
+ul.head-social li a.social-a.yt{
+    background-position: -139px -1px;
+}
+ul.head-social li a.social-a.inst{
+    background-position: -173px -1px;
+}
+.subscribe-block.new-title h2{
+    background-image: url("../img/bg-subscribe.png");
+    color:#FFFFFF;
+    font-size: 20px;
+    font-family: 'Cuprum', sans-serif;
+    margin: 0px -15px 0;
+    border-radius: 5px 5px 0 0;
+    padding: 15px;
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.4);
+}
+.subscribe-block.new-title h2 em{
+    display: inline-block;
+    line-height: 21px;
+    font-style: normal;
+}
+.subscribe-block.new-title h2 span{
+    background-image: url("../img/subscribe.png");
+    width: 76px;
+    height: 40px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.rasilka{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 4px solid #f37324;
+}
+
+.rasilka a.open-rasilka{
+    width: 83px;
+    height: 46px;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    display: block;
+    background-image: url("../img/open-rasilka.png");
+}
+.rasilka a.open-rasilka.close-rasilka{
+     background-image: url("../img/close-rasilka.png");
+}
+body .rasilka-block .btn-subscribe{
+    background: none;
+    background-image: url("../img/btn-subscribe.png");
+    background-size: auto 100%;
+}
+body .rasilka-block .btn-subscribe:hover{
+    background: none;
+    background-image: url("../img/btn-subscribe-hover.png");
+}
+.bg-rasilka{
+    margin-top: 30px;
+    background-color: #e7e9eb;
+}
+.rasilka-block .imge-block{
+    width: 207px;
+    height: 146px;
+    background-image: url("../img/rasilka.png");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.rasilka-block .form-rasilka{
+    padding-left: 210px;
+    padding-right: 90px;
+}
+.rasilka-block .form-group{
+    margin: 25px 0;
+}
+.rasilka-block p{
+    font-size: 18px;
+    color: #345ba3;
+}
+.rasilka-block h1{
+    text-shadow: 0px 0 10px  #e7e9eb;
+    font-size: 36px;
+    color:#f37324;
+    font-weight: bold;
+    font-family: 'Cuprum', sans-serif;
+    text-align: right;
+    margin-top: -20px;
+}
+.rasilka span.subs-text{
+    font-size: 18px;
+    width: 100px;
+    position: absolute;
+    right: 15px;
+    bottom: 50px;
+    color:#db8d38;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+    display: block;
+}
+.rasilka span.subs-text.none{
+    display: none;
 }
 @media screen and (max-width: 1200px) {
     header .contact p a{

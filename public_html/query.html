@@ -100,37 +100,39 @@
                                 <li>Вопрос - ответ</li>
                             </ul>
                         </div>
-                        <div class="form-side">
-                            <div class="title-block clearfix">
-                                <div class="name query">Вопрос - ответ</div><div class="arr"></div>
-                            </div>   
-                            <h3 class="text-left">Задать вопрос</h3>
-                            <div class="row">
-                                <div class="col-sm-10 col-sm-offset-1 query-form">
-                                    <form>
-                                        <div class="form-group two">
-                                            <input type="text" placeholder="Имя" class="form-control">
-                                            <input type="text" placeholder="Email" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea placeholder="Вопрос" class="form-control"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-xs-3">
-                                                    <input type="text" class="form-control" placeholder="Код">
-                                                </div>
-                                                <div class="col-xs-3">
-                                                    <div class="capchea">
-                                                        <p>ЕКу45</p>
-                                                    </div>													
+                        <div class="title-block clearfix">
+                            <div class="name query">Вопрос - ответ</div><div class="arr"></div>
+                        </div>
+                        <div class="white-bg">
+                            <div class="form-side query-form-side">
+                                <h3 class="text-left">Задать вопрос</h3>
+                                <div class="row">
+                                    <div class="col-sm-10 col-sm-offset-1 query-form">
+                                        <form>
+                                            <div class="form-group two">
+                                                <input type="text" placeholder="Имя" class="form-control">
+                                                <input type="text" placeholder="Email" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea placeholder="Вопрос" class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <input type="text" class="form-control" placeholder="Код">
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <div class="capchea">
+                                                            <p>ЕКу45</p>
+                                                        </div>													
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group text-center">
-                                            <button type="submit" class="btn-submit query"><span></span>Отправить вопрос</button>
-                                        </div>
-                                    </form>
+                                            <div class="form-group text-center">
+                                                <button type="submit" class="btn-submit query"><span></span>Отправить вопрос</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -184,6 +186,10 @@
                                 <p>Здравствуйте! Доставку в Воронежскую область мы осуществляем Почтой России. Сроки доставки заказа – 4-7 рабочих дней.</p>
                             </div>							
                         </div>
+                        <div class="more-query">
+                            <a href="javascript:void()">Еще <span></span></a>
+                        </div>							
+
                     </div>
                     <div class="col-sm-4 hidden-sm hidden-xs">
                         <div class="bg-white">
@@ -312,7 +318,7 @@
                 },
             };
             var jssor_slider_prod3 = new $JssorSlider$("slider1_container3", options_prod1);
-             function ScaleSlider() {
+            function ScaleSlider() {
 
                 var parentWidth1 = jssor_slider_prod3.$Elmt.parentNode.clientWidth;
                 if (parentWidth1) {

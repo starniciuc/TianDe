@@ -2050,6 +2050,15 @@ body .rasilka-block .btn-subscribe:hover{
 .rasilka span.subs-text.none{
     display: none;
 }
+footer p.text-black{
+    color: #000000;
+    text-shadow: none;
+    font-size: 14px;
+}
+.text-container img.img-circle{
+    border-radius: 50%;
+    width: auto;
+}
 @media screen and (max-width: 1200px) {
     header .contact p a{
         font-size: 15px;
